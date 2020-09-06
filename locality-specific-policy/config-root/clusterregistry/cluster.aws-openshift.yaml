@@ -2,7 +2,7 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: taiwan
+  name: aws-openshift
   labels:
-    environment: prod
-    location: taiwan
+    environment: dev
+    location: washington
