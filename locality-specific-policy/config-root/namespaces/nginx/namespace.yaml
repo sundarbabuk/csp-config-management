@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: newyork-prod
+  labels:
+    env: prod
+    location: newyork
+  annotations:
+    audit: "true"  
