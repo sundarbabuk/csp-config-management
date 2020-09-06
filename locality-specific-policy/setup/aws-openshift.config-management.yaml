@@ -4,9 +4,9 @@ metadata:
   name: config-management
   namespace: config-management-system
 spec:
-  clusterName: taiwan
+  clusterName: aws-openshift
   git:
-    syncRepo: git@github.com:<GITHUB-USERNAME>/csp-config-management.git
+    syncRepo: https://github.com/sundarbabuk/csp-config-management/
     syncBranch: 1.0.0
-    secretType: ssh
+    secretType: none
     policyDir: "locality-specific-policy/config-root"

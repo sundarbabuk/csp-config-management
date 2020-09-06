@@ -4,9 +4,9 @@ metadata:
   name: config-management
   namespace: config-management-system
 spec:
-  clusterName: belgium
+  clusterName: eks
   git:
-    syncRepo: git@github.com:<GITHUB-USERNAME>/csp-config-management.git
+    syncRepo: https://github.com/sundarbabuk/csp-config-management/
     syncBranch: 1.0.0
-    secretType: ssh
-    policyDir: "docs/locality-specific-policy/"
+    secretType: none
+    policyDir: "locality-specific-policy/config-root"
