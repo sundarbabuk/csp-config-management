@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   namespace: proxy
   annotations:
-    configmanagement.gke.io/managed: enabled
+    configmanagement.gke.io/managed
   labels:
     app: nginx
 spec:
