@@ -2,6 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: proxy
+  annotations:
+    configmanagement.gke.io/managed: enabled
+    configmanagement.gke.io/cluster-slector: select-location-newyork
   labels:
     app: nginx
 spec:
@@ -9,10 +13,12 @@ spec:
   selector:
     matchLabels:
       app: nginx
+      cluster: newyork
   template:
     metadata:
       labels:
         app: nginx
+        cluster: newyork
     spec:
       containers:
       - name: nginx
